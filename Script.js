@@ -94,4 +94,6 @@ const API_KEY = "51d17d37b7ea42d2a8e41f34d47a1ee4"
         document.querySelectorAll('.hover-links').forEach(links => 
         links.addEventListener('click', () =>{
             slide.classList.remove('slide')
+            view.classList.remove('view')
+                
         }))
