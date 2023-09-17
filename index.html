@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+
+        <div class="main-nav container flex">
+            <a href="">LOGO</a>
+
+            <div class="nav-links" id="slide">
+                <ul class="flex">
+                    <li class="hover-links nav-item" id="Politics" onclick="onNavItemClick('Politics')">Politics</li>
+                    <li class="hover-links nav-item" id="Science" onclick="onNavItemClick('Science')">Science</li>
+                    <li class="hover-links nav-item" id="Sports" onclick="onNavItemClick('Sports')">Sports</li>
+                    <li class="hover-links nav-item" id="Technology" onclick="onNavItemClick('Technology')">Technology
+                    </li>
+                    <li class="hover-links nav-item" id="Entertainment" onclick="onNavItemClick('Entertainment')">
+                        Entertainment</li>
+                </ul>
+            </div>
+
+            <div class="search-bar" id="view">
+                <input type="text" id="search-text" class="news-input" placeholder="e.g. Science">
+                <button id="search" class="search-btn">Search</button>
+            </div>
+            
+            <div class="option" id="Menu">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <main>
+
+        <div class="cards-container container flex" id="cards-container">
+
+        </div>
+    </main>
+    <template id="template-new-card">
+        <div class="card">
+            <div class="card-header">
+                <img id="news-img" src="https://www.marketscreener.com/images/twitter_MS_fdnoir.png">
+            </div>
+            <div class="card-content">
+                <h3 id="news-tittle">This is the tittle</h3>
+                <h4 class="news-source" id="news-source">End gardet 24/08/2023</h4>
+                <p class="news-desc" id="news-desc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita ratione harum deserunt blanditiis
+                    nihil officiis quibusdam accusantium modi architecto atque debitis excepturi officia, delectus
+                    voluptates molestias qui dolorum distinctio. Corrupti?
+                </p>
+            </div>
+        </div>
+    </template>
+
+    <script src="Script.js"></script>
+
+</body>
+</html>
