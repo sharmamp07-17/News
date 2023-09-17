@@ -62,7 +62,7 @@ const API_KEY = "51d17d37b7ea42d2a8e41f34d47a1ee4"
             // let srh = SearchText.value 
 
             if(SearchText.value < 1){
-                alert("Please search your News!")
+                alert("Please write your News!")
             }
             else{
 
@@ -86,7 +86,6 @@ const API_KEY = "51d17d37b7ea42d2a8e41f34d47a1ee4"
         const view = document.getElementById('view')
 
         menu.addEventListener('click', ()=>{
-            menu.style.transform = "rotate(360deg)"
             slide.classList.toggle('slide')
             view.classList.toggle('view')
         })
